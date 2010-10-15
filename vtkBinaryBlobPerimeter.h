@@ -27,6 +27,8 @@ protected:
 
   int RequestData(vtkInformation *, vtkInformationVector **, vtkInformationVector *);
 
+  int ConnectivityMode;
+  
 private:
 
   vtkBinaryBlobPerimeter(const vtkBinaryBlobPerimeter&);  // Not implemented.
