@@ -1,7 +1,23 @@
-// .NAME vtkPTXReader - read a ptx file
+/*=========================================================================
+
+  Program:   Visualization Toolkit
+  Module:    vtkBinaryBlobPerimeter2D.h
+
+  Copyright (c) Ken Martin, Will Schroeder, Bill Lorensen
+  All rights reserved.
+  See Copyright.txt or http://www.kitware.com/Copyright.htm for details.
+
+     This software is distributed WITHOUT ANY WARRANTY; without even
+     the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR
+     PURPOSE.  See the above copyright notice for more information.
+
+=========================================================================*/
+// .NAME vtkBinaryBlobPerimeter2D - finds the boundary of blobs in a binary image
 // .SECTION Description
-// vtkPTXReader reads a ptx file
-// Motivated by http://www.mathworks.com/help/toolbox/images/ref/bwperim.html
+// vtkBinaryBlobPerimeter2D, motivated by the Matlab function bwperim,
+// finds the boundary of connected white pixel regions (blobs) in a binary image.
+// The ConnectivityMode can be set to SPARSE (4-connectedness) or DENSE
+// (8-connectedness)
 
 #ifndef __vtkBinaryBlobPerimeter2D_h
 #define __vtkBinaryBlobPerimeter2D_h
