@@ -5,6 +5,6 @@ PROJECT(vtkBinaryBlobPerimeter)
 FIND_PACKAGE(VTK REQUIRED)
 INCLUDE(${VTK_USE_FILE})
 
-ADD_EXECUTABLE(vtkBinaryBlobPerimeterExample vtkBinaryBlobPerimeterExample.cxx vtkBinaryBlobPerimeter.cxx)
+ADD_EXECUTABLE(vtkBinaryBlobPerimeterExample vtkBinaryBlobPerimeter2DExample.cxx vtkBinaryBlobPerimeter2D.cxx)
 TARGET_LINK_LIBRARIES(vtkBinaryBlobPerimeterExample vtkHybrid )
 
